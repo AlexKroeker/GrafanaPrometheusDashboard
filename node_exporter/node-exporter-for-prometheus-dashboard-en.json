@@ -61,7 +61,7 @@
       }
     ]
   },
-  "description": "(English version) Update 2020.10.10, add the overall resource overview! Support Grafana6&7,Support Node Exporter v0.16 and above.Optimize the main metrics display. Includes: CPU, memory, disk IO, network, temperature and other monitoring metrics。https://github.com/starsliao/Prometheus",
+  "description": "(English version) Update 2020.10.10, add the overall resource overview! Support Grafana6&7,Support Node Exporter v0.16 and above.Optimize the main metrics display. Includes: CPU, memory, disk IO, network, temperature and other monitoring metrics. https://github.com/starsliao/Prometheus",
   "editable": true,
   "gnetId": 11074,
   "graphTooltip": 0,
@@ -161,7 +161,7 @@
         },
         {
           "$$hashKey": "object:1601",
-          "alias": "IP (Link to details)",
+          "alias": "IP(Link to details)",
           "align": "auto",
           "colorMode": null,
           "colors": [
@@ -466,7 +466,7 @@
           "format": "table",
           "instant": true,
           "interval": "",
-          "legendFormat": "主机名",
+          "legendFormat": "CPU Name",
           "refId": "A"
         },
         {
@@ -475,7 +475,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "运行时间",
+          "legendFormat": "Operation Hours",
           "refId": "D"
         },
         {
@@ -484,7 +484,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "总内存",
+          "legendFormat": "Total Memory",
           "refId": "B"
         },
         {
@@ -493,7 +493,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "总核数",
+          "legendFormat": "Total Number of Cores",
           "refId": "C"
         },
         {
@@ -501,7 +501,7 @@
           "format": "table",
           "instant": true,
           "interval": "",
-          "legendFormat": "5分钟负载",
+          "legendFormat": "5-Minute Load",
           "refId": "L"
         },
         {
@@ -510,7 +510,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "CPU使用率",
+          "legendFormat": "CPU Usage",
           "refId": "F"
         },
         {
@@ -519,7 +519,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "内存使用率",
+          "legendFormat": "Memory Usage",
           "refId": "G"
         },
         {
@@ -528,7 +528,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "分区使用率",
+          "legendFormat": "Partition Usage",
           "refId": "E"
         },
         {
@@ -537,7 +537,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "最大读取",
+          "legendFormat": "Maximum Read",
           "refId": "H"
         },
         {
@@ -546,7 +546,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "最大写入",
+          "legendFormat": "Maximum Write",
           "refId": "I"
         },
         {
@@ -555,7 +555,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "连接数",
+          "legendFormat": "Number of Connections",
           "refId": "M"
         },
         {
@@ -573,7 +573,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "下载带宽",
+          "legendFormat": "Download Bandwith",
           "refId": "J"
         },
         {
@@ -582,31 +582,28 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "上传带宽",
+          "legendFormat": "Upload Bandwidth",
           "refId": "K"
         }
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Server Resource Overview (JOB: $job, Total: $total)",
+      "title": "Server Resource Overview(JOB: $job, Total: $total)",
       "transform": "table",
       "type": "table-old"
     },
     {
       "aliasColors": {
-        "192.168.200.241:9100_Total": "dark-red",
         "Idle - Waiting for something to happen": "#052B51",
         "guest": "#9AC48A",
         "idle": "#052B51",
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -759,14 +756,13 @@
     },
     {
       "aliasColors": {
-        "192.168.200.241:9100_总内存": "dark-red",
-        "内存_Avaliable": "#6ED0E0",
-        "内存_Cached": "#EF843C",
-        "内存_Free": "#629E51",
-        "内存_Total": "#6d1f62",
-        "内存_Used": "#eab839",
-        "可用": "#9ac48a",
-        "总内存": "#bf1b00"
+        "Memory_Avaliable": "#6ED0E0",
+        "Memory_Cached": "#EF843C",
+        "Memory_Free": "#629E51",
+        "Memory_Total": "#6d1f62",
+        "Memory_Used": "#eab839",
+        "Available": "#9ac48a",
+        "Total_Memory": "#bf1b00"
       },
       "bars": false,
       "dashLength": 10,
@@ -1228,7 +1224,7 @@
           "hide": true,
           "instant": true,
           "interval": "",
-          "legendFormat": "IOwait使用率",
+          "legendFormat": "IOwait Usage",
           "refId": "C"
         },
         {
@@ -1441,7 +1437,7 @@
           "instant": true,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "总量",
+          "legendFormat": "Total",
           "refId": "C"
         },
         {
@@ -1553,12 +1549,6 @@
     },
     {
       "aliasColors": {
-        "cn-shenzhen.i-wz9cq1dcb6zwc39ehw59_cni0_in": "light-red",
-        "cn-shenzhen.i-wz9cq1dcb6zwc39ehw59_cni0_in下载": "green",
-        "cn-shenzhen.i-wz9cq1dcb6zwc39ehw59_cni0_out上传": "yellow",
-        "cn-shenzhen.i-wz9cq1dcb6zwc39ehw59_eth0_in下载": "purple",
-        "cn-shenzhen.i-wz9cq1dcb6zwc39ehw59_eth0_out": "purple",
-        "cn-shenzhen.i-wz9cq1dcb6zwc39ehw59_eth0_out上传": "blue"
       },
       "bars": true,
       "dashLength": 10,
@@ -1665,7 +1655,7 @@
         {
           "$$hashKey": "object:2977",
           "format": "bytes",
-          "label": "transmit (-) /receive (+)",
+          "label": "transmit(-) / receive(+)",
           "logBase": 1,
           "max": null,
           "min": null,
@@ -2001,19 +1991,16 @@
     },
     {
       "aliasColors": {
-        "192.168.200.241:9100_Total": "dark-red",
         "Idle - Waiting for something to happen": "#052B51",
         "guest": "#9AC48A",
         "idle": "#052B51",
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -2169,15 +2156,14 @@
     },
     {
       "aliasColors": {
-        "192.168.200.241:9100_总内存": "dark-red",
-        "使用率": "yellow",
-        "内存_Avaliable": "#6ED0E0",
-        "内存_Cached": "#EF843C",
-        "内存_Free": "#629E51",
-        "内存_Total": "#6d1f62",
-        "内存_Used": "#eab839",
-        "可用": "#9ac48a",
-        "总内存": "#bf1b00"
+        "Usage": "yellow",
+        "Memory_Avaliable": "#6ED0E0",
+        "Memory_Cached": "#EF843C",
+        "Memory_Free": "#629E51",
+        "Memory_Total": "#6d1f62",
+        "Memory_Used": "#eab839",
+        "Available": "#9ac48a",
+        "Total Memory": "#bf1b00"
       },
       "bars": false,
       "dashLength": 10,
@@ -2251,7 +2237,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "node_memory_MemTotal_bytes{instance=~\"$node\"} or node_memory_total_bytes{instance=~\"$node\"} ",
+          "expr": "node_memory_MemTotal_bytes{instance=~\"$node\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -2262,7 +2248,7 @@
           "step": 4
         },
         {
-          "expr": "(node_memory_MemTotal_bytes{instance=~\"$node\"} or node_memory_total_bytes{instance=~\"$node\"}) - (node_memory_MemAvailable_bytes{instance=~\"$node\"} or node_memory_free_bytes{instance=~\"$node\"})",
+          "expr": "node_memory_MemTotal_bytes{instance=~\"$node\"} - node_memory_MemAvailable_bytes{instance=~\"$node\"}",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -2272,7 +2258,7 @@
           "step": 4
         },
         {
-          "expr": "node_memory_MemAvailable_bytes{instance=~\"$node\"} or node_memory_free_bytes{instance=~\"$node\"}",
+          "expr": "node_memory_MemAvailable_bytes{instance=~\"$node\"}",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -2287,16 +2273,16 @@
           "hide": true,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "内存_Buffers",
+          "legendFormat": "Memory_Buffers",
           "refId": "D",
           "step": 4
         },
         {
-          "expr": "node_memory_MemFree_bytes{instance=~\"$node\"} or node_memory_free_bytes{instance=~\"$node\"}",
+          "expr": "node_memory_MemFree_bytes{instance=~\"$node\"}",
           "format": "time_series",
           "hide": true,
           "intervalFactor": 1,
-          "legendFormat": "内存_Free",
+          "legendFormat": "Memory_Free",
           "refId": "C",
           "step": 4
         },
@@ -2305,7 +2291,7 @@
           "format": "time_series",
           "hide": true,
           "intervalFactor": 1,
-          "legendFormat": "内存_Cached",
+          "legendFormat": "Memory_Cached",
           "refId": "E",
           "step": 4
         },
@@ -2317,7 +2303,7 @@
           "refId": "G"
         },
         {
-          "expr": "(1 - (node_memory_MemAvailable_bytes{instance=~\"$node\"} or node_memory_free_bytes{instance=~\"$node\"} / (node_memory_MemTotal_bytes{instance=~\"$node\"} or node_memory_total_bytes{instance=~\"$node\"})))* 100",
+          "expr": "(1 - (node_memory_MemAvailable_bytes{instance=~\"$node\"} / (node_memory_MemTotal_bytes{instance=~\"$node\"})))* 100",
           "format": "time_series",
           "hide": false,
           "interval": "30m",
@@ -2371,8 +2357,6 @@
     },
     {
       "aliasColors": {
-        "192.168.10.227:9100_em1_in下载": "super-light-green",
-        "192.168.10.227:9100_em1_out上传": "dark-blue"
       },
       "bars": false,
       "dashLength": 10,
@@ -2476,7 +2460,7 @@
         {
           "$$hashKey": "object:3315",
           "format": "bps",
-          "label": "transmit (-) /receive (+)",
+          "label": "transmit(-) / receive (+)",
           "logBase": 1,
           "max": null,
           "min": null,
@@ -2499,9 +2483,9 @@
     },
     {
       "aliasColors": {
-        "15分钟": "#6ED0E0",
-        "1分钟": "#BF1B00",
-        "5分钟": "#CCA300"
+        "15-Minute": "#6ED0E0",
+        "1-Minute": "#BF1B00",
+        "5-Minute": "#CCA300"
       },
       "bars": false,
       "dashLength": 10,
@@ -2918,7 +2902,7 @@
       "dashes": false,
       "datasource": "${DS__VICTORIAMETRICS}",
       "decimals": 2,
-      "description": "Read/write completions per second\n\nWrites completed: 每个磁盘分区每秒写完成次数\n\nIO now 每个磁盘分区每秒正在处理的输入/输出请求数",
+      "description": "Read/write completions per second\n\nWrites completed: The number of write completions per second per disk partition\n\nIO now The number of I/O requests being processed per second per disk partition.",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -3056,12 +3040,10 @@
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -3274,7 +3256,7 @@
           "hide": true,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{device}}_加权",
+          "legendFormat": "{{device}}_weighted",
           "refId": "D"
         }
       ],
@@ -3521,11 +3503,6 @@
     },
     {
       "aliasColors": {
-        "filefd_192.168.200.241:9100": "super-light-green",
-        "switches_192.168.200.241:9100": "semi-dark-red",
-        "使用的文件描述符_10.118.72.128:9100": "red",
-        "每秒上下文切换次数_10.118.71.245:9100": "yellow",
-        "每秒上下文切换次数_10.118.72.128:9100": "yellow"
       },
       "bars": false,
       "cacheTimeout": null,
@@ -3617,7 +3594,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 5,
-          "legendFormat": "使用的文件描述符占比_{{instance}}",
+          "legendFormat": "percentage_of_file_descriptors_used_{{instance}}",
           "refId": "C"
         }
       ],
@@ -3670,7 +3647,8 @@
   "style": "dark",
   "tags": [
     "Prometheus",
-    "node_exporter"
+    "node_exporter",
+    "StarsL.cn"
   ],
   "templating": {
     "list": [
@@ -3939,7 +3917,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "1    Node Exporter for Prometheus Dashboard EN v20201010",
+  "title": "1     Node Exporter for Prometheus Dashboard EN 20201010",
   "uid": "xfpJB9FGz",
   "version": 2
 }
