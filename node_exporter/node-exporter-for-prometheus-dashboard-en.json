@@ -603,7 +603,7 @@
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
-        "user": "#5195CE",
+        "user": "#5195CE"
       },
       "bars": false,
       "dashLength": 10,
@@ -2000,7 +2000,7 @@
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
-        "user": "#5195CE",
+        "user": "#5195CE"
       },
       "bars": false,
       "dashLength": 10,
@@ -3043,7 +3043,7 @@
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
-        "user": "#5195CE",
+        "user": "#5195CE"
       },
       "bars": false,
       "dashLength": 10,
